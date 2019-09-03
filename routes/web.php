@@ -12,6 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    phpinfo();
+    //return view('welcome');
 });
 Route::get('/user/add','UserController@add');
+Route::get('/user/redisTest','UserController@redisTest');
